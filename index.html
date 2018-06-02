@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" type="image/x-icon" href="rav.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="main.css" rel="stylesheet">
+    <link href="co-main.css" rel="stylesheet">
+    <title>RAV Industries</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script language=JavaScript>
+    var message="Restricted For Security Reasons";
+    ///////////////////////////////////
+    function clickIE4(){
+        if (event.button==2){
+            alert(message);
+            return false;
+        }
+    }
+    function clickNS4(e){
+        if (document.layers||document.getElementById&&!document.all){
+            if (e.which==2||e.which==3){
+                alert(message);
+                return false;
+            }
+        }
+    }
+    if (document.layers){
+        document.captureEvents(Event.MOUSEDOWN);
+        document.onmousedown=clickNS4;
+    }
+    else if (document.all&&!document.getElementById){
+        document.onmousedown=clickIE4;
+    }
+    document.oncontextmenu=new Function("alert(message);return false")
+    // -->
+    $(document).keydown(function (event) {
+        if (event.keyCode == 123) {
+            return false;
+        }
+        else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+            return false;
+        }
+    });
+
+    $(document).on("contextmenu", function (e) {
+        e.preventDefault();
+    });
+</script>
+
+<!--------------------------------------------------------------------------------------------------------------------->
+<!--intro section -->
+<div class="bgimg-1">
+    <div class="caption" >
+        <span class="border1">RAV INDUSTRIES</span>
+    </div>
+</div>
+<!--------------------------------------------------------------------------------------------------------------------->
+<!--About section -->
+<div class="bgimg-2" id="about" >
+    <div class="container-fluid text-center">
+        <h3 style="padding-bottom: 50px;font-size: 2em;">ABOUT ME</h3>
+        <img src="me1.jpeg" class="img-circle" alt=""/>
+        <p STYLE="padding-top: 40px;font-size: 2em">Vicky A</p>
+        <h3 style="font-size: 2em">FOUNDER & CEO - RAV INDUSTRIES</h3>
+        <h3 style="font-size: 2em">CO-FOUNDER : VISHNU</h3>
+</div>
+</div>
+<!--------------------------------------------------------------------------------------------------------------------->
+<!--resume section -->
+<div class="body1">
+    <div class="container-fluid  text-center " style="background-color: #222222;opacity: 0.90" id="resume">
+
+    <h2 STYLE="padding-top: 3px;padding-bottom: 3px;color: silver;font-family: wakanda">RESUME</h2>
+
+</div>
+<div class="timeline">
+    <div class="container left">
+        <div class="content">
+            <h3>computer-Languages Known</h3>
+            <p>To be updated</p>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="content">
+            <h3>Course-completed</h3>
+            <p>To be updated</p>
+        </div>
+    </div>
+    <div class="container left">
+        <div class="content">
+            <h3>intern</h3>
+            <p>To be updated</p>
+        </div>
+    </div>
+    <div class="container right">
+        <div class="content">
+            <h3>workshops-attended</h3>
+            <p>To be updated</p>
+        </div>
+    </div>
+    <div class="container left">
+        <div class="content">
+            <h3>Certifications</h3>
+            <p>To be updated</p>
+        </div>
+    </div>
+
+</div>
+</div>
+<!--------------------------------------------------------------------------------------------------------------------->
+<!--Services section -->
+<div class="bgimg-3" id="service">
+
+    <div class="container-fluid  text-center" style="background-color: #222222;opacity: 0.60">
+
+        <h2 STYLE="padding-top: 3px;padding-bottom: 3px;color: silver;font-family: wakanda">SERVICES OFFERED BY US</h2>
+
+    </div>
+<section class="spotlight style2 orient-left content-align-left image-position-center onscroll-image-fade-in bdr-btm">
+    <div class="content">
+        <h2>SOFTWARE DEVELOPMENT</h2>
+        <p>Software Development ahead of the curve</p>
+    </div>
+    <div class="image">
+        <img src="developer.png" alt="" />
+    </div>
+</section>
+
+
+<section class="spotlight style2 orient-right content-align-left image-position-center onscroll-image-fade-in bdr-btm">
+    <div class="content">
+        <h2>WEB DEVELOPMENT</h2>
+        <p>A Perfect Integrity of tags and styles which you would like for a front end web page</p>
+
+    </div>
+    <div class="image">
+        <img src="web.png" alt="" />
+    </div>
+</section>
+
+
+<section class="spotlight style3 orient-left content-align-left image-position-center onscroll-image-fade-in bdr-btm">
+    <div class="content">
+        <h2>APPLICATION DEVELOPMENT</h2>
+        <p>We develop powerful applications for this powerful mobile world</p>
+
+    </div>
+    <div class="image">
+        <img src="app.jpg" alt="" />
+    </div>
+</section>
+
+<section class="spotlight style2 orient-right content-align-left image-position-center onscroll-image-fade-in bdr-btm">
+    <div class="content">
+        <h2>HOME DESIGN</h2>
+        <p>Design is thinking.... made visual</p>
+
+    </div>
+    <div class="image">
+        <img src="home.png" alt="" />
+    </div>
+</section>
+</div>
+<!--------------------------------------------------------------------------------------------------------------------->
+<!-- Container (details Section) -->
+<div class="container-fluid1 text-center" style="background-color: snow">
+    <h2>CONTACT CARD</h2>
+    <br>
+    <div class="row">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-user logo-small"></span>
+            <p>PHONE</p>
+            <h4>+ ( 91 ) 9 4 8 9 8 9 3 3 2 2</h4>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-map-marker logo-small"></span>
+            <p>ADDRESS</p>
+            <h4>4/71 L.G.NAGAR,</h4>
+            <h4>NAGAMALAI,</h4>
+            <h4>MADURAI-625019.</h4>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-envelope logo-small"></span>
+            <p>E-MAIL</p>
+            <h4>alwinmartin23@gmail.com</h4>
+        </div>
+    </div>
+    <br><br>
+</div>
+<!-- Container (Contact Section) -->
+<div class="bgimg-4" id="contact">
+<form action="https://formspree.io/alwinmartin23@email.com" method="POST">
+    <h5 style="padding-top: 7%;margin-bottom: 3%;font-size: 2em">Wanna tell Me something ?</h5>
+    <div style="margin-right: 10%;margin-left: 10%; font-family: wakanda">
+        <div class="row">
+            <div class="col">
+                <input type="text" class="form-control" placeholder="Name*" name="name" style="background-color: snow">
+            </div><br>
+            <div class="col">
+                <input type="text" class="form-control" placeholder="E-mail*" name="_replyto" style="background-color: snow">
+            </div>
+        </div>
+        <div class="form-group" style="margin-top: 2%;">
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Comments*" name="comments" style="background-color: snow"></textarea>
+        </div>
+        <!-- Button trigger modal -->
+        <div style="display: inline-flex">
+            <input  type="submit" class="button special" data-toggle="modal" data-target="#exampleModalCenter" style="border-radius: 5px;colour: silver;" vlaue="Send">
+
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Greetings 🌹</h5>
+
+                    </div>
+                    <div class="modal-body">
+                        <h5>Thanks For Contacting me! 🙂 </h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="button special" data-dismiss="modal" style="border-radius: 5px; align: center">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+</div>
+<!--------------------------------------------------------------------------------------------------------------------->
+<!-- Footer -->
+<footer class="align-center" style="padding-top: 10px; margin-top: 0%;margin-bottom: 0%">
+
+    <div class="inner">
+        <ul class="icons">
+            <li><a href="#" class="icon style2 fa-facebook" data-toggle="popover" data-placement="top" title="Vicky"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon style2 fa-instagram" data-toggle="popover" data-placement="top" title="VIcky_0203"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon style2 fa-whatsapp" data-toggle="popover" data-placement="top" title="+(91) 9489893322"><span class="label" >Whatsapp</span></a></li>
+            <li><a href="#" class="icon style2 fa-envelope" data-toggle="popover" data-placement="top" title="alwinmartin23@gmail.com"><span class="label">Email</span></a></li>
+            <li><a href="#" class="icon style2 fa-twitter" data-toggle="popover" data-placement="top" title="Vicky_RAV"><span class="label" >Twitter</span></a></li>
+        </ul>
+        <p>Copy Right © Vicky [RAV Industries]</p>
+    </div>
+
+</footer>
+<!--------------------------------------------------------------------------------------------------------------------->
+<!-- Scripts
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+</body>
+</html>
